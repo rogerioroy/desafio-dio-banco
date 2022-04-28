@@ -1,0 +1,29 @@
+package com.banco;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Conta conta = new Conta();
+		conta.incluirConta("Rogerio", "12345678901");
+		
+		conta.mostraCliente(1);
+		conta.mostraConta(1);
+		
+		/*
+		Cliente cliente = new Cliente();
+		
+		cliente.incluirCliente("Rogerio" , "12345678901");
+		conta.incluirConta();
+		cliente.incluirCliente("Sara" , "99999999999");
+		conta.incluirConta();
+		
+
+		cliente.mostraCliente(1);
+		conta.mostraConta(1);
+		*/
+		
+
+	}
+	
+}

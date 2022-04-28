@@ -1,0 +1,53 @@
+package com.banco;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+
+	private String nome;
+	private String cpf;
+	List<Object> listaCliente = new ArrayList<>();
+	
+	public Cliente() {}	
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void incluirCliente(String nome, String cpf) {
+		this.setNome(nome);
+		this.setCpf(cpf);
+		listaCliente.add(Object);
+//		listaCliente.add(cpf);
+	}
+
+	public void listarCliente() {
+		for (Object object : listaCliente) {
+			System.out.println(object.toString());
+		}
+	}
+	
+	public void mostraCliente(int codigo) {
+		for (int i = 0 ; i < listaCliente.size() ; i++) {
+			System.out.println(listaCliente.size());
+			if (i== codigo) {
+				System.out.println("TITULAR: " + listaCliente.get(0) + "   CPF:" +listaCliente.get(1));
+			}
+		}
+
+	}
+
+}

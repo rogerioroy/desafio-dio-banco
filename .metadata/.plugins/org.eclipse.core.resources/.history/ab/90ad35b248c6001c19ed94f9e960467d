@@ -1,0 +1,51 @@
+package com.banco;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Banco {
+	
+	private static final int AGENCIA_PADRAO = 1;
+	private static final String BANCO_PADRAO = "BANCO POPULAR";
+	
+	private static int SEQUENCIAL = 1;
+	
+	protected int agencia;
+	protected int numero;
+	protected String nomeBanco;
+	List<Banco> listaBanco = new ArrayList<>();
+	
+	public Banco() {
+		this.agencia = AGENCIA_PADRAO;
+		this.nomeBanco = BANCO_PADRAO;
+		this.numero = SEQUENCIAL++;
+	}
+	
+	public int getAgencia() {
+		return agencia;
+	}
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getNomeBanco() {
+		return nomeBanco;
+	}
+	
+	public void setNomeBanco(String nomeBanco) {
+		this.nomeBanco = nomeBanco;
+	}
+	
+	public void incluirBanco() {
+		listaBanco.add(new Cliente(nome , cpf));
+	}
+
+}

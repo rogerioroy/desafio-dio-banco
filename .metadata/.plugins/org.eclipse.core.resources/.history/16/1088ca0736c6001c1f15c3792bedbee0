@@ -1,0 +1,29 @@
+package com.banco;
+
+public class Banco {
+	
+	private static final int AGENCIA_PADRAO = 1;
+
+	protected int agencia;
+	protected String nomeBanco;
+	
+	public Banco() {
+		this.agencia = AGENCIA_PADRAO;
+	}
+	
+	public int getAgencia() {
+		return agencia;
+	}
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+	public String getNomeBanco() {
+		return nomeBanco;
+	}
+	public void setNomeBanco(String nomeBanco) {
+		this.nomeBanco = nomeBanco;
+	}
+	
+	
+	
+}

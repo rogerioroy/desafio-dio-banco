@@ -1,0 +1,21 @@
+package com.banco;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Conta conta = new Conta();
+		conta.incluirConta("Rogerio", "12345678901");
+		conta.incluirConta("Sara", "99999999999");
+		
+		conta.extratoContas(1);
+		conta.extratoContas(2);
+		conta.depositar("CC", 0, 50.00);
+		conta.extratoContas(1);
+		conta.extratoContas(2);
+
+		
+
+	}
+	
+}

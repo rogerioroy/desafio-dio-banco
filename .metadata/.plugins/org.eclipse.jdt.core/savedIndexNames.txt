@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\temp\desafiodioBanco\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1907591793.index
+2422301837.index
